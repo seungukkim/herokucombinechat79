@@ -36,7 +36,7 @@ def db_select(choice):
     # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
     for r in result:       
         print(r)
-   
+    
 
 app = Flask(__name__)
 

@@ -126,7 +126,20 @@ def whereLive():
     age=json.loads(params_df['sys_number'])['amount']
     print(age)
     advantage1="\'" + advantage +"\'"
-    start.db_select(advantage1)
+    
+
+    responseBody = {
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                {
+                    "simpleText": {
+                        "text": start.db_select(advantage1)
+                    }
+                }
+            ]
+        }
+    }
 
 
     
