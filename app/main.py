@@ -1,6 +1,7 @@
 from cgi import parse_multipart
 from flask import Flask, request
 import json
+import start
 
 # 메인 로직!! 
 def cals(opt_operator, number01, number02):
@@ -124,7 +125,7 @@ def whereLive():
 
     age=json.loads(params_df['sys_number'])['amount']
     print(age)
-   
+    start.db_select()
 
 
     
