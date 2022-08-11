@@ -30,9 +30,10 @@ def db_create():
     data.to_sql(name='dreamspon', con=engine, schema = 'public', if_exists='replace', index=False)
 
 
-def db_select():
-    
-    result= engine.execute("select name from dreamspon where advantage like '학비지원'")
+def db_select(choice):
+    # choice="\'생활비지원'"
+    result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE {} ".format(choice))
+    # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
     for r in result:       
         print(r)
    

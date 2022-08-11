@@ -125,7 +125,8 @@ def whereLive():
 
     age=json.loads(params_df['sys_number'])['amount']
     print(age)
-    start.db_select()
+    
+    start.db_select(advantage)
 
 
     
