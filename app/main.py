@@ -134,13 +134,14 @@ def whereLive():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": start.db_select(advantage1)
+                        "text": start.db_select(advantage1)[0]
                     }
                 }
             ]
         }
     }
 
+  
 
     
     
