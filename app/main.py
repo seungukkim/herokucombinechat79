@@ -131,13 +131,14 @@ def whereLive():
     list2=list1[0]
     print(list2)
     print(type(list2))
+    list3=list2[2:-2]
     responseBody = {
         "version": "2.0",
         "template": {
             "outputs": [
                 {
                     "simpleText": {
-                        "text": list2
+                        "text": list3
                     }
                 }
             ]
