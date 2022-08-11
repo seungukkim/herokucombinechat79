@@ -122,11 +122,11 @@ def whereLive():
 
     advantage=params_df['advantage']
     print(advantage)
-
+    print(type(advantage))
     age=json.loads(params_df['sys_number'])['amount']
     print(age)
-    
-    start.db_select(advantage)
+    advantage1="\'" + advantage +"\'"
+    start.db_select(advantage1)
 
 
     

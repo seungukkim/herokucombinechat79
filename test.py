@@ -11,3 +11,7 @@ choice="\'생활비지원'"
 
 print("SELECT name FROM dreamspon WHERE advantage LIKE {}".format(choice))
 print("select name from dreamspon where advantage like '학비지원'")
+
+hello = "hello7"
+hell1 ="\'"+ hello + "\'"
+print(hell1)
