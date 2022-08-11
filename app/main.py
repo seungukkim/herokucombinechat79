@@ -127,10 +127,8 @@ def whereLive():
     print(age)
     advantage1="\'" + advantage +"\'"
     list1=start.db_select(advantage1)
-    print(list1[0])
-
-    print(type(list1[0]))
-    list2=str(list1)
+    print(list1)
+    list2=list1[0]
     print(list2)
     responseBody = {
         "version": "2.0",
