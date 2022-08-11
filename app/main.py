@@ -138,7 +138,7 @@ def whereLive():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": list1[0]
+                        "text": list2
                     }
                 }
             ]
