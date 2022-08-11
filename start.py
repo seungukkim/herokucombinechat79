@@ -30,9 +30,9 @@ def db_create():
     data.to_sql(name='dreamspon', con=engine, schema = 'public', if_exists='replace', index=False)
 
 
-def db_select():
+def db_select(choice):
     list=[]
-    choice="\'생활비지원'"
+    # choice="\'생활비지원'"
     result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE {} ".format(choice))
     # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
     
