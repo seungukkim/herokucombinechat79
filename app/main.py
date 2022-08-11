@@ -130,6 +130,7 @@ def whereLive():
     print(list1)
     list2=list1[0]
     print(list2)
+    print(type(list2))
     responseBody = {
         "version": "2.0",
         "template": {
