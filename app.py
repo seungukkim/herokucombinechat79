@@ -3,7 +3,7 @@
 from flask import Flask
 import pandas as pd 
 from sqlalchemy import create_engine
-engine = create_engine("postgres://rrymfmuquvllha:3812aa0e630719b0ae32263fe1592d222818850c660c67cb559823299794f8e4@ec2-54-172-175-251.compute-1.amazonaws.com:5432/dbqsobkjgiql18", echo = False)
+engine = create_engine("postgresql://rrymfmuquvllha:3812aa0e630719b0ae32263fe1592d222818850c660c67cb559823299794f8e4@ec2-54-172-175-251.compute-1.amazonaws.com:5432/dbqsobkjgiql18", echo = False)
 
 engine.connect()
 
