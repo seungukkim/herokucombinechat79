@@ -130,7 +130,20 @@ def whereLive():
     print(list1[0])
     print(type(list1[0]))
     
+    responseBody = {
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                {
+                    "simpleText": {
+                        "text": list1[0]
+                    }
+                }
+            ]
+        }
+    }
 
+    return responseBody
   
 
     
