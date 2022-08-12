@@ -175,9 +175,9 @@ def whereLive():
                         "messageText": "해당 사이트로 이동합니다"
                         },
                         {
-                        "action":  "webLink",
+                        
                         "label": "구경하기",
-                        "webLinkUrl": "https://www.naver.com"
+                        "link": {"web": "https://www.naver.com"}
                         }
                     ]
                     },
