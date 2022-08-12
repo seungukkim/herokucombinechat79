@@ -146,7 +146,7 @@ def whereLive():
                     "title": list1[0][2:-3],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/a.png?raw=true"
                     },
                     "buttons": [
                         {
@@ -166,7 +166,7 @@ def whereLive():
                     "title": list1[1][2:-3],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
                     },
                     "buttons": [
                         {
@@ -185,7 +185,7 @@ def whereLive():
                     "title": list1[2][2:-3],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/c.png?raw=true"
                     },
                     "buttons": [
                         {
