@@ -201,6 +201,46 @@ def whereLive():
                         }
                        
                     ]
+                    },
+                    {
+                    "title": list1[3][2:-62],
+                    "description": "장학금 추천",
+                    "thumbnail": {
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
+                    },
+                    "buttons": [
+                        {
+                        "action":  "webLink",
+                        "label": "구경하기",
+                        "webLinkUrl": list1[3][-58:-2]
+                        },
+
+                        {
+                        "action": "share",
+                        "label": "공유하기"                      
+                        }
+                        
+                    ]
+                    },
+                    {
+                    "title": list1[4][2:-62],
+                    "description": "장학금 추천",
+                    "thumbnail": {
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
+                    },
+                    "buttons": [
+                        {
+                        "action":  "webLink",
+                        "label": "구경하기",
+                        "webLinkUrl": list1[4][-58:-2]
+                        },
+
+                        {
+                        "action": "share",
+                        "label": "공유하기"                      
+                        }
+                        
+                    ]
                     }
                 ]
                 }
