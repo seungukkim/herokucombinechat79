@@ -146,22 +146,20 @@ def whereLive():
                     "title": list1[0][2:-62],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/a.png?raw=true",
-                        "link": {
-                            "web": "https://www.naver.com"
-              }
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/a.png?raw=true"
                     },
                     "buttons": [
                         {
-                        "action": "message",
-                         "label": "이동하기",
-                        "messageText": "해당 사이트로 이동합니다."
-                        },
-                        {
-                        "action":  "webLink",
+                        "action":"webLink",
                         "label": "구경하기",
                         "webLinkUrl": list1[0][-58:-2]
+                        },
+                        {
+                        "action": "share",
+                         "label": "공유하기"
+                        
                         }
+                        
                     ]
                     },
 
@@ -173,15 +171,16 @@ def whereLive():
                     },
                     "buttons": [
                         {
-                        "action": "message",
-                        "label": "이동하기",
-                        "messageText": "해당 사이트로 이동합니다"
-                        },
-                        {
                         "action":  "webLink",
                         "label": "구경하기",
-                        "webLinkUrl": "https://www.naver.com"
+                        "webLinkUrl": list1[1][-58:-2]
+                        },
+
+                        {
+                        "action": "share",
+                        "label": "공유하기"                      
                         }
+                        
                     ]
                     },
                     {
@@ -191,16 +190,16 @@ def whereLive():
                         "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/c.png?raw=true"
                     },
                     "buttons": [
-                        {
-                        "action": "message",
-                        "label": "열어보기",
-                        "messageText": "해당 사이트로 이동합니다"
+                         {
+                        "action": "webLink",
+                        "label": "구경하기",
+                        "webLinkUrl": list1[2][-58:-2]
                         },
                         {
-                        "action":  "webLink",
-                        "label": "구경하기",
-                        "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+                        "action": "share",
+                        "label": "공유하기"
                         }
+                       
                     ]
                     }
                 ]
