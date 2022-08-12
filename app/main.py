@@ -158,17 +158,15 @@ def whereLive():
                         "action": "share",
                          "label": "공유하기"
                         
+                        },
+                        {
+                        "action":"message",
+                        "label":"더보기",
+                        "messageText": "장학금 더보기"   
                         }
                         
-                    ],
-                    "buttons": [
-                        {
-                        "label": "더보기",
-                        "action": "message",
-                        "messageText" : "장학금 더보기"
-                    }
                     ]
-
+                    
 
                     },
 
