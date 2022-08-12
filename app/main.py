@@ -146,7 +146,10 @@ def whereLive():
                     "title": list1[0][2:-62],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/a.png?raw=true"
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/a.png?raw=true",
+                        "link": {
+                            "web": "https://www.naver.com"
+              }
                     },
                     "buttons": [
                         {
