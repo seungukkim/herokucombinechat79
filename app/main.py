@@ -160,7 +160,16 @@ def whereLive():
                         
                         }
                         
+                    ],
+                    "buttons": [
+                        {
+                        "label": "더보기",
+                        "action": "message",
+                        "messageText" : "장학금 더보기"
+                    }
                     ]
+
+
                     },
 
                     {
