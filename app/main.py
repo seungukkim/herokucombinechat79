@@ -157,7 +157,7 @@ def whereLive():
                         {
                         "action":  "webLink",
                         "label": "구경하기",
-                        "webLinkUrl": list[0][-27:-2]
+                        "webLinkUrl": list1[0][-27:-2]
                         }
                     ]
                     },
