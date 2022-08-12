@@ -3,15 +3,19 @@ choice="\'생활비지원'"
 # choice1 = '생활비지원'
 # print(choice1)
 # if(choice ==choice1):
-#     print('1')
-# choice2 = "\'생활비지원'"
+#     print('1')ㄴ
 # print(choice2)
 # choice='생활비지원'
 #     result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '{}' ".format(choice))
 
-print("SELECT name FROM dreamspon WHERE advantage LIKE {}".format(choice))
-print("select name from dreamspon where advantage like '학비지원'")
+# print("SELECT name FROM dreamspon WHERE advantage LIKE {}".format(choice))
+# print("select name from dreamspon where advantage like '학비지원'")
 
-hello = "hello7"
-hell1 ="\'"+ hello + "\'"
-print(hell1)
+print("select name from dreamspon where who like '대학생'")
+print("SELECT name FROM dreamspon WHERE who LIKE '%"+'대학생'+"%'")
+
+
+
+# hello = "hello7"
+# hell1 ="\'"+ hello + "\'"
+# print(hell1)
