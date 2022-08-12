@@ -127,7 +127,7 @@ def whereLive():
     age=json.loads(params_df['sys_number'])['amount']
     print(age)
     advantage1="\'" + advantage +"\'"
-    job1="\'%%" + job + "\%%"
+    job1="\'%%" + job + "%%\'"
     list1=start.db_select(advantage1,job1)
     print(list1)
     list2=list1[0]
