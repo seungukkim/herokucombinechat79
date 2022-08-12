@@ -34,7 +34,7 @@ def db_select(choice,choice1):
     list=[]
     # choice="\'생활비지원'"
     # choice1="\'%%대학생%%'"
-    result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE {0} AND who like {1} ".format(choice,choice1))
+    result= engine.execute("SELECT name,url FROM dreamspon WHERE advantage LIKE {0} AND who like {1} ".format(choice,choice1))
     # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
     
     for r in result: 
@@ -47,9 +47,10 @@ def db_select(choice,choice1):
     return list
 
 def db_select1():
-    list=[]
+    # list=[]
     # choice="\'생활비지원'"
-    result= engine.execute("SELECT name FROM dreamspon WHERE who LIKE'%%대학생%%'")
+    # result= engine.execute("SELECT name,url FROM dreamspon WHERE who LIKE'%%대학생%%'")
+    result= engine.execute("SELECT name,url FROM dreamspon WHERE advantage LIKE '학비지원'")
     # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
     
     for r in result: 

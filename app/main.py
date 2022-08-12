@@ -143,7 +143,7 @@ def whereLive():
                 "type": "basicCard",
                 "items": [
                     {
-                    "title": list1[0][2:-3],
+                    "title": list1[0][2:-50],
                     "description": "장학금 추천",
                     "thumbnail": {
                         "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/a.png?raw=true"
@@ -157,7 +157,7 @@ def whereLive():
                         {
                         "action":  "webLink",
                         "label": "구경하기",
-                        "webLinkUrl": "https://www.naver.com"
+                        "webLinkUrl": list[0][-27:-2]
                         }
                     ]
                     },
