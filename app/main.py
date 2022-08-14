@@ -270,17 +270,17 @@ def where2Live():
     params_df=body['action']['params']
     print(params_df)
     
-    job=params_df['job']
+    job=params_df['job1']
     print(job)
     print(type(job))
 
-    location=params_df['location']
+    location=params_df['location1']
     print(location)
 
-    position=params_df['position']
+    position=params_df['position1']
     [print(position)]
 
-    advantage=params_df['advantage']
+    advantage=params_df['advantage1']
     print(advantage)
     print(type(advantage))
     age=json.loads(params_df['sys_number'])['amount']
