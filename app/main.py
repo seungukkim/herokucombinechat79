@@ -1,3 +1,4 @@
+
 from cgi import parse_multipart
 from flask import Flask, request
 import json
@@ -113,6 +114,7 @@ def whereLive():
     
     job=params_df['job']
     print(job)
+    print(type(job))
 
     location=params_df['location']
     print(location)
@@ -126,28 +128,140 @@ def whereLive():
     age=json.loads(params_df['sys_number'])['amount']
     print(age)
     advantage1="\'" + advantage +"\'"
-    list1=start.db_select(advantage1)
+    job1="\'%%" + job + "%%\'"
+    list1=start.db_select(advantage1,job1)
     print(list1)
     list2=list1[0]
     print(list2)
     print(type(list2))
-    list3=list2[2:-3]
+    # list3=list2[2:-3]
     responseBody = {
         "version": "2.0",
         "template": {
             "outputs": [
                 {
-                    "simpleText": {
-                        "text": list3
+                "carousel": {
+                "type": "basicCard",
+                "items": [
+                    {
+                    "title": list1[0][2:-62],
+                    "description": "장학금 추천",
+                    "thumbnail": {
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/a.png?raw=true"
+                    },
+                    "buttons": [
+                        {
+                        "action":"webLink",
+                        "label": "구경하기",
+                        "webLinkUrl": list1[0][-58:-2]
+                        },
+                        {
+                        "action": "share",
+                         "label": "공유하기"
+                        
+                        }
+                        
+                    ]
+                    
+
+                    },
+
+                    {
+                    "title": list1[1][2:-62],
+                    "description": "장학금 추천",
+                    "thumbnail": {
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
+                    },
+                    "buttons": [
+                        {
+                        "action":  "webLink",
+                        "label": "구경하기",
+                        "webLinkUrl": list1[1][-58:-2]
+                        },
+
+                        {
+                        "action": "share",
+                        "label": "공유하기"                      
+                        }
+                        
+                    ]
+                    },
+                    {
+                    "title": list1[2][2:-62],
+                    "description": "장학금 추천",
+                    "thumbnail": {
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/c.png?raw=true"
+                    },
+                    "buttons": [
+                         {
+                        "action": "webLink",
+                        "label": "구경하기",
+                        "webLinkUrl": list1[2][-58:-2]
+                        },
+                        {
+                        "action": "share",
+                        "label": "공유하기"
+                        }
+                       
+                    ]
+                    },
+                    {
+                    "title": list1[3][2:-62],
+                    "description": "장학금 추천",
+                    "thumbnail": {
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
+                    },
+                    "buttons": [
+                        {
+                        "action":  "webLink",
+                        "label": "구경하기",
+                        "webLinkUrl": list1[3][-58:-2]
+                        },
+
+                        {
+                        "action": "share",
+                        "label": "공유하기"                      
+                        }
+                        
+                    ]
+                    },
+                    {
+                    "title": list1[4][2:-62],
+                    "description": "장학금 추천",
+                    "thumbnail": {
+                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
+                    },
+                    "buttons": [
+                        {
+                        "action":  "webLink",
+                        "label": "구경하기",
+                        "webLinkUrl": list1[4][-58:-2]
+                        },
+
+                        {
+                        "action": "share",
+                        "label": "공유하기"                      
+                        }
+                        
+                    ]
                     }
+                ]
                 }
+             }
+            ],
+            "quickReplies": [
+            {
+                "messageText": "추가 장학금",
+                "action": "message",
+                "label": "장학금 더보기"
+            }
+            
             ]
         }
-    }
+        }
 
     return responseBody
   
 
     
     
-

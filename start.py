@@ -30,19 +30,34 @@ def db_create():
     data.to_sql(name='dreamspon', con=engine, schema = 'public', if_exists='replace', index=False)
 
 
-def db_select(choice):
+def db_select(choice,choice1):
     list=[]
     # choice="\'생활비지원'"
-    result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE {} ".format(choice))
+    # choice1="\'%%대학생%%'"
+    result= engine.execute("SELECT name,url FROM dreamspon WHERE advantage LIKE {0} AND who like {1} ".format(choice,choice1))
     # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
     
     for r in result: 
         list.append(str(r))
+        
              
         
     print(list[1])
     print(list[2])
     return list
+
+def db_select1():
+    # list=[]
+    # choice="\'생활비지원'"
+    # result= engine.execute("SELECT name,url FROM dreamspon WHERE who LIKE'%%대학생%%'")
+    result= engine.execute("SELECT name,url FROM dreamspon WHERE advantage LIKE '학비지원'")
+    # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
+    
+    for r in result: 
+        print(r)
+             
+        
+    
 
 app = Flask(__name__)
 
@@ -55,5 +70,5 @@ def index():
 if __name__ == "__main__":
     # db_create()
     db_select()
-    
+    # db_select1()
     app.run()
