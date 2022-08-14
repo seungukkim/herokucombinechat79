@@ -262,8 +262,9 @@ def whereLive():
 
     return responseBody
   
-# @app.route('/api/where2Live', methods=['POST'])
-# def where2Live():
-#     body = request.get_json()
-#     print(body)
-
+@app.route('/api/where2Live', methods=['POST'])
+def where2Live():
+    body = request.get_json()
+    print(body)
+    params_df=body['action']['params']
+    print(params_df)
