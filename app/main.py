@@ -283,7 +283,7 @@ def where2Live():
     advantage=params_df['advantage1']
     print(advantage)
     print(type(advantage))
-    age=json.loads(params_df['sys_number'])['amount']
+    age=json.loads(params_df['sys_number1'])['amount']
     print(age)
     advantage1="\'" + advantage +"\'"
     job1="\'%%" + job + "%%\'"
