@@ -1,0 +1,69 @@
+{
+    "bot":{
+       "id":"62f48d0678a1fc2ba5b22df4!",
+       "name":"연습용798527"
+    },
+    "intent":{
+       "id":"62f4967478a1fc2ba5b22fe7",
+       "name":"사칙연산",
+       "extra":{
+          "reason":{
+             "code":1,
+             "message":"OK"
+          }
+       }
+    },
+    "action":{
+       "id":"62f490a678a1fc2ba5b22eaa",
+       "name":"사칙 연산 텍스트 응답",
+       "params":{
+          "sys_number01":"{\"amount\": 3, \"unit\": null}",
+          "operators":"addition",
+          "sys_number02":"{\"amount\": 4, \"unit\": null}"
+       },
+       "detailParams":{
+          "sys_number01":{
+             "groupName":"",
+             "origin":"3",
+             "value":"{\"amount\": 3, \"unit\": null}"
+          },
+          "operators":{
+             "groupName":"",
+             "origin":"더하기",
+             "value":"addition"
+          },
+          "sys_number02":{
+             "groupName":"",
+             "origin":"4",
+             "value":"{\"amount\": 4, \"unit\": null}"
+          }
+       },
+       "clientExtra":{
+          
+       }
+    },
+    "userRequest":{
+       "block":{
+          "id":"62f4967478a1fc2ba5b22fe7",
+          "name":"사칙연산"
+       },
+       "user":{
+          "id":"38aef6456cdf666e216db269a5f57b98b121b38f544fe0029f4b38ab347bc44e08",
+          "type":"botUserKey",
+          "properties":{
+             "botUserKey":"38aef6456cdf666e216db269a5f57b98b121b38f544fe0029f4b38ab347bc44e08",
+             "bot_user_key":"38aef6456cdf666e216db269a5f57b98b121b38f544fe0029f4b38ab347bc44e08"
+          }
+       },
+       "utterance":"3 더하기 4\n",
+       "params":{
+          "surface":"BuilderBotTest",
+          "ignoreMe":"true"
+       },
+       "lang":"kr",
+       "timezone":"Asia/Seoul"
+    },
+    "contexts":[
+       
+    ]
+ }

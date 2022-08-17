@@ -94,7 +94,7 @@ def calCulator():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": answer_text
+                        "text": "정답은 {}이다".format(answer_text)
                     }
                 }
             ]
