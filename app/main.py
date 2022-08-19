@@ -428,6 +428,7 @@ def orderconfirm():
     print(temperature)
     print(beverage)
     print(many)
+    price=order(many)
     responseBody = {
         "version": "2.0",
         "template": {
@@ -435,6 +436,9 @@ def orderconfirm():
                 {
                     "simpleText": {
                         "text": "{} {} {}잔 주문하셨습니다".format(temperature,beverage,many)
+                    },
+                    "simpleText": {
+                        "text": "가격은 {}입니다".format(price)
                     }
                 }
             ]
@@ -442,3 +446,6 @@ def orderconfirm():
     }
 
     return responseBody
+
+def order(n):
+    return n*2000
