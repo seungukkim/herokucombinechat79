@@ -420,3 +420,11 @@ def where2Live():
 def orderconfirm():
     body = request.get_json()
     print(body)
+    params_df=body['action']['params']
+    print(params_df)
+    temperature=params_df['temperature']
+    beverage=params_df['beverage']
+    many=json.load(params_df['amount'])
+    print(temperature)
+    print(beverage)
+    print(many)
