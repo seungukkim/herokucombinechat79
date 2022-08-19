@@ -428,3 +428,17 @@ def orderconfirm():
     print(temperature)
     print(beverage)
     print(many)
+    responseBody = {
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                {
+                    "simpleText": {
+                        "text": "{} {} {}잔 주문하셨습니다".format(temperature,beverage,many)
+                    }
+                }
+            ]
+        }
+    }
+
+    return responseBody
