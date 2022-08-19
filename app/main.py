@@ -435,11 +435,10 @@ def orderconfirm():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": "{} {} {}잔 주문하셨습니다".format(temperature,beverage,many)
-                    },
-                    "simpleText": {
+                        "text": "{} {} {}잔 주문하셨습니다".format(temperature,beverage,many),
                         "text": "가격은 {}입니다".format(price)
                     }
+                    
                 }
             ]
         }
