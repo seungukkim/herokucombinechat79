@@ -415,3 +415,8 @@ def where2Live():
 
     return responseBody
     
+
+@app.route('/api/orderconfirm', methods=['POST'])
+def orderconfirm():
+    body = request.get_json()
+    print(body)
