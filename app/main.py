@@ -424,7 +424,7 @@ def orderconfirm():
     print(params_df)
     temperature=params_df['temperature']
     beverage=params_df['beverage']
-    many=json.load(params_df['amount'])
+    many = json.loads(params_df['sys_number'])['amount']
     print(temperature)
     print(beverage)
     print(many)
