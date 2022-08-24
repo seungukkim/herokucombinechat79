@@ -44,6 +44,30 @@ def create_app(test_config=None):
 
         return responseBody
 
+
+    ## 카카오톡 이미지형 응답
+    @app.route('/api/showHello', methods=['POST'])
+    def showHello():
+        body = request.get_json()
+        print(body)
+        print(body['userRequest']['utterance'])
+
+        responseBody = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleImage": {
+                            "imageUrl": "https://t1.daumcdn.net/friends/prod/category/M001_friends_ryan2.jpg",
+                            "altText": "hello I'm Ryan"
+                        }
+                    }
+                ]
+            }
+        }
+
+        return responseBody
+
     from .main import main
     # from .dashapp1 import dashapp1
     from .dashapp1 import bp as bp_dashapp1
