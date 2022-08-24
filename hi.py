@@ -8,6 +8,8 @@ import start
 def cals(opt_operator, number01, number02):
     if opt_operator == "addition":
         return number01 + number02
+
+
     elif opt_operator == "subtraction": 
         return number01 - number02
     elif opt_operator == "multiplication":
@@ -22,50 +24,10 @@ def hello_world():
     return 'Hello, World!'
 
 # 카카오톡 텍스트형 응답
-@app.route('/api/sayHello', methods=['POST'])
-def sayHello():
-    body = request.get_json() # 사용자가 입력한 데이터
-    print(body)
-    print(body['userRequest']['utterance'])
-
-    responseBody = {
-        "version": "2.0",
-        "template": {
-            "outputs": [
-                {
-                    "simpleText": {
-                        "text": "안녕 hello I'm Ryan"
-                    }
-                }
-            ]
-        }
-    }
-
-    return responseBody
 
 
-# 카카오톡 이미지형 응답
-@app.route('/api/showHello', methods=['POST'])
-def showHello():
-    body = request.get_json()
-    print(body)
-    print(body['userRequest']['utterance'])
 
-    responseBody = {
-        "version": "2.0",
-        "template": {
-            "outputs": [
-                {
-                    "simpleImage": {
-                        "imageUrl": "https://t1.daumcdn.net/friends/prod/category/M001_friends_ryan2.jpg",
-                        "altText": "hello I'm Ryan"
-                    }
-                }
-            ]
-        }
-    }
 
-    return responseBody
 
 
 # 카카오톡 Calculator 계산기 응답
