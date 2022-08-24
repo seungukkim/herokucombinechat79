@@ -1,6 +1,6 @@
 import os 
-
-from flask import Flask, render_template
+from cgi import parse_multipart
+from flask import Flask, render_template,request
 
 
 def create_app(test_config=None):
@@ -22,6 +22,27 @@ def create_app(test_config=None):
     @app.route('/')
     def hello():
         return render_template('index.jinja2', title='index page')
+
+    @app.route('/api/sayHello', methods=['POST'])
+    def sayHello():
+        body = request.get_json() # 사용자가 입력한 데이터
+        print(body)
+        print(body['userRequest']['utterance'])
+
+        responseBody = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleText": {
+                            "text": "안녕 hello I'm Ryan"
+                        }
+                    }   
+                ]
+            }
+        }
+
+        return responseBody
 
     from .main import main
     # from .dashapp1 import dashapp1
