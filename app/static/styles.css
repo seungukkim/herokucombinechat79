@@ -497,7 +497,7 @@ progress {
   font-weight: 300;
   line-height: 1.2;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .display-1 {
     font-size: 5rem;
   }
