@@ -1,7 +1,7 @@
 import os 
 from cgi import parse_multipart
 from flask import Flask, render_template,request
-
+import json
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -18,6 +18,17 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+        # 메인 로직!! 
+    def cals(opt_operator, number01, number02):
+        if opt_operator == "addition":
+            return number01 + number02
+        elif opt_operator == "subtraction": 
+            return number01 - number02
+        elif opt_operator == "multiplication":
+            return number01 * number02
+        elif opt_operator == "division":
+            return number01 / number02
 
     @app.route('/')
     def hello():
